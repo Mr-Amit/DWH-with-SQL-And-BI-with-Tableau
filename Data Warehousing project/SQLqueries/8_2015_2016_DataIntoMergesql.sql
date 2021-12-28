@@ -1,0 +1,17 @@
+USE DataWareHouse;
+
+INSERT INTO MERGE2015_2017 (Authority,ONSCode,WasteProcessorId,WasteStreamId,WasteProcessorOutputId,
+		SenderWasteProcessorOutputId,AuthorityId,Period,PeriodId,WasteStreamTypeId,
+		WasteStreamType,FacilityTypeId,FacilityType,NationalFacilityId,FacilityName,
+		FacilityAddress,FacilityPostCode,FacilityLicence,OutputProcessTypeId,OutputProcessType,
+		TotalTonnes,MaterialId,Material,TonnesByMaterial,TonnesFromHHSources,TonnesFromNonHHSources,
+		TonnesFromWfHSources,TonnesFromWnfHSources,UsageId,MaterialGroup)
+
+SELECT Authority,ONSCode,WasteProcessorId,WasteStreamId,WasteProcessorOutputId,
+		SenderWasteProcessorOutputId,AuthorityId,Period,PeriodId,WasteStreamTypeId,
+		WasteStreamType,FacilityTypeId,FacilityType,NationalFacilityId,FacilityName,
+		FacilityAddress,FacilityPostCode,FacilityLicence,OutputProcessTypeId,OutputProcessType,
+		TotalTonnes,MaterialId,Material,TonnesByMaterial,TonnesFromHHSources,TonnesFromNonHHSources,
+		TonnesFromWfHSources,TonnesFromWnfHSources,UsageId,MaterialGroup
+
+FROM data2015_2016;
